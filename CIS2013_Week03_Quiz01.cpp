@@ -13,10 +13,10 @@ int main (){
 	cin >> first_number;
 	cout << "\n" << "type your second number: ";
 	cin >> second_number;
-	while (invalid_entry=false){
+	while (invalid_entry=true){
 	cout << "\n" << "would you like to add or multiply? choose + or *: ";
 	cin >> operation;
-	if ((operation !='*') or (operation !='+')){
+	if ((operation !='*') || (operation !='+')){
 	cout << "invalid operation. Please choose + or *.";}
 	else {invalid_entry=false;}}
 	if (operation=='+'){result=first_number+second_number;}
